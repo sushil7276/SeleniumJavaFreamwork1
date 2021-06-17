@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+  
+<suite name="DemoFile" verbose="1" >
+  <test name="demo" >
+    <classes>
+       <class name="project.TestNG_Group" />
+       <class name="project.Test1"/>
+       <class name="project.amezon"/>
+       <class name="project.Test2"/>
+    </classes>
+  </test>
+</suite>
