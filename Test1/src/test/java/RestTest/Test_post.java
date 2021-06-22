@@ -18,33 +18,33 @@ public class Test_post {
 	@Test
 	public void Test01_post() {
 		
-		Map<String, Object> map = new HashMap<String, Object>();
+//		Map<String, Object> map = new HashMap<String, Object>();
+//		
+//		map.put("name", "sushil");
+//		map.put("job", "Testing");
+//		
+//		System.out.println(map);
 		
-		map.put("name", "sushil");
-		map.put("job", "Testing");
-		
-		System.out.println(map);
-		
-		JSONObject requset = new JSONObject();
-		
-		requset.put("name", "sushil");
-		requset.put("job", "tetsing");
-		
-		System.out.println(requset);
-		System.out.println(requset.toJSONString());
+//		JSONObject requset = new JSONObject();
+//		
+//		requset.put("name", "sushil");
+//		requset.put("job", "tetsing");
+//		
+//		System.out.println(requset);
+//		System.out.println(requset.toJSONString());
 		
 		given().
-		header("content-Type", "application/json").
+			header("content-Type", "application/json").
 			contentType(ContentType.JSON).
 			accept(ContentType.JSON).
-		body(requset.toJSONString())
-			.when().
-		post("https://reqres.in/api/users").
-			then().
-			statusCode(201);
+			body(PayloadTest.body()).
+		when().
+			post("https://reqres.in/api/users").
+		then().
+			statusCode(201).log().all();
 		
 	}
-	
+	/*
 	//put test
 	@Test
 	public void TestPut() {
@@ -106,5 +106,5 @@ public class Test_post {
 			statusCode(204).log().all();
 		
 	}
-	
+	*/
 }
