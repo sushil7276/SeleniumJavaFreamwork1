@@ -22,7 +22,7 @@ public class Example {
 			statusCode(200).log().all();
 	}
 
-	
+	*/
 
 	@Test
 	public void test_post() {
@@ -66,16 +66,16 @@ public class Example {
 	}
 	*/
 	
-	@Test
-	public void delete() {
-		
-		baseURI = "http://localhost:3000/";
-		
-		when().
-			delete("/users/5").
-		then().
-			statusCode(200).log().all();
-
-	}
+//	@Test
+//	public void delete() {
+//		
+//		baseURI = "http://localhost:3000/";
+//		
+//		when().
+//			delete("/users/5").
+//		then().
+//			statusCode(200).log().all();
+//
+//	}
 	
 }

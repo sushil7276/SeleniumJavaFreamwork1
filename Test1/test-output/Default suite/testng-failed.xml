@@ -3,11 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="RestTest.Example">
+      <class name="testTrip.ValidationTrip">
         <methods>
-          <include name="test_post"/>
+          <include name="TO"/>
+          <include name="Test"/>
         </methods>
-      </class> <!-- RestTest.Example -->
+      </class> <!-- testTrip.ValidationTrip -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

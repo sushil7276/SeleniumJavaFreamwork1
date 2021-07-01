@@ -25,7 +25,7 @@ public class MakeMyTrip {
 		
 		try {
 			
-			InputStream input = new FileInputStream("C:\\Users\\sushils\\eclipse-workspace\\Test1\\src\\test\\java\\config\\config.properties");
+			InputStream input = new FileInputStream("C:\\Users\\sushils\\git\\SeleniumJavaFreamwork1\\Test1\\src\\test\\java\\config\\config.properties");
 			
 			pro.load(input);
 			Selenium1Test.browser = pro.getProperty("browser");
